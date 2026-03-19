@@ -8,7 +8,7 @@ public class Intro{
         hm.put("China",150);
         hm.put("usa",50);
 
-        System.out.println(hm);
+        System.out.println(hm);      
 
         //Get 
         int population=hm.get("India");

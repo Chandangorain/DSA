@@ -1,4 +1,8 @@
-
+/* 
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+*/
 import java.util.*;
 public class palindrome
 {
@@ -35,4 +39,5 @@ public class palindrome
 		String s=sc.nextLine();
 		System.out.println(isPalindrome(s));
 	}
+    
 }
