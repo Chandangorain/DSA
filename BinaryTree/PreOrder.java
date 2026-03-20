@@ -19,14 +19,10 @@ public class PreOrder{
             if (idx >= nodes.length || nodes[idx] == -1) {
         return null;
     }
-
-
             Node newNode = new Node(nodes[idx]);
             newNode.left = buildTree(nodes);
             newNode.right = buildTree(nodes);
             return newNode;
-
-
         }
     }
 
