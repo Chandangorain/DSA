@@ -39,6 +39,23 @@ public class Second {
 
         }
 
+        //remove
+        public int  remove(){
+            if(isEmpty()){
+                System.out.println("empty queue");
+                return -1;
+            }
+            
+            int front=head.data;  // store front data before removing
+            if(head==tail){
+                head=tail=null;
+            }else{
+                head=head.next; // update head pointer to next node
+            }
+            return front;
+
+        }
+
     }
     
 }
