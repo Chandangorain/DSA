@@ -42,7 +42,7 @@ public class First {
                 arr[i]=arr[i+1];    //element of i+1 index stored in i index . so 1st index element is removed
             }
             rear=rear-1;        // after remove rear is shifted
-            return front;
+            return front; 
 
            
         }
