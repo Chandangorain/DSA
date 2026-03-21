@@ -46,6 +46,15 @@ public class First {
 
            
         }
+
+        //peek
+        public static int peek(){
+            if(isEmpty()){
+                System.out.println("empty queue");
+                return -1;
+            }
+            return arr[0]; // peak always the 0th index
+        }
     }
 
     public static void main(String[] args) {
