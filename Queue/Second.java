@@ -56,6 +56,23 @@ public class Second {
 
         }
 
+        //peek
+        public int peek(){
+            if(isEmpty()){
+                System.out.println("queue is empty");
+                return -1;
+            }
+            return head.data;
+        }
+
     }
     
+    public static void main(String[] args) {
+        Queue q=new Queue();
+        q.add(10);
+        q.add(20);
+        q.add(30);
+
+        System.out.println(q.remove()); //10
+    }
 }
