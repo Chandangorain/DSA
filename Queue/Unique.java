@@ -6,7 +6,7 @@ public class Unique {
 
     public static int firstUniCharac(String s){
          HashMap<Character,Integer> map=new HashMap<>();
-    Queue<Integer>q=new LinkedList<>();
+        Queue<Integer>q=new LinkedList<>();
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(!map.containsKey(ch)){           // if appears first time
