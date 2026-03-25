@@ -18,7 +18,7 @@ public class Anagram
             for(int i=0;i<n;i++){
                 count[t.charAt(i)-'a']--;
             }
-            for(int i=0;i<count.length;i++){
+            for(int i=0;i<count.length;i++){    // check if empty or not , empty means all were same then anagram 
                 if(count[i]!=0){
                     return false;
                 }
