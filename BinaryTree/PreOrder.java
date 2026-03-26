@@ -73,7 +73,7 @@ public class PreOrder{
                     if(q.isEmpty()){        // is q empty means all are done then break
                         break ;
                     }else{
-                        q.add(null);  // else add null in queue becz null helps to put in next line
+                        q.add(null);  // else add null in queue becz null helps to put in next line 
                     }
 
                 }else{
