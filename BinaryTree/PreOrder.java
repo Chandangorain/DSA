@@ -12,13 +12,13 @@ public class PreOrder{
         }
     }
 
-    static class BinaryTree{
+    static class Solution{
             static int idx = -1;
         public static Node buildTree(int nodes[]){      // node creation function
             idx++;
             if (nodes[idx]== -1) {  //-1= no child
                 return null;
-    }
+            }
             Node newNode = new Node(nodes[idx]);
 
             newNode.left = buildTree(nodes);    //recursive call of node creation
@@ -35,16 +35,28 @@ public class PreOrder{
             preorder(root.left);    // if root= 1, then 1.left .
             preorder(root.right);
         }
+
+        //inorder traversal
+        public static void inorder(Node root){  //left->root->right
+            if(root==null){
+                return;
+            }
+            inorder(root.left);
+            System.out.println(root.data+"");
+            inorder(root.right);
+        }
     }
 
     public static void main(String[]args){
         int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTree tree= new BinaryTree();
+        Solution tree= new Solution();      // BinaryTree=datatype , tree= variable , BinaryTree()  = constructor , we declare as a class
+
         Node root=tree.buildTree(nodes);
-        // System.out.println(root.data);   this is for print root data
+        System.out.println(root.data);    //this is for print root data
 
         tree.preorder(root);  // preorder traversal : 1 2 4 5 3 6
 
+        tree.inorder(root);  //inorder TRversL : 425136
         
 
     }
