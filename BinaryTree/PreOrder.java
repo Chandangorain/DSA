@@ -45,6 +45,15 @@ public class PreOrder{
             System.out.println(root.data+"");
             inorder(root.right);
         }
+
+        public static void postorder(Node root){
+            if(root==null){
+                return ;
+            }
+            postorder(root.left);
+            postorder(root.right);
+            System.out.println(root.data);
+        }
     }
 
     public static void main(String[]args){
@@ -52,12 +61,13 @@ public class PreOrder{
         Solution tree= new Solution();      // BinaryTree=datatype , tree= variable , BinaryTree()  = constructor , we declare as a class
 
         Node root=tree.buildTree(nodes);
-        System.out.println(root.data);    //this is for print root data
+       // System.out.println(root.data);    //this is for print root data
 
-        tree.preorder(root);  // preorder traversal : 1 2 4 5 3 6
+         tree.preorder(root);  // preorder traversal : 1 2 4 5 3 6
 
         tree.inorder(root);  //inorder TRversL : 425136
         
+        tree.postorder(root);  // postorder
 
     }
     
