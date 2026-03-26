@@ -54,6 +54,42 @@ public class PreOrder{
             postorder(root.right);
             System.out.println(root.data);
         }
+
+        // level order traversal
+        public static void levelorder(Node root){
+            if(root==null){
+                return ;
+            }
+            Queue<Node>q=new LinkedList<>();
+            q.add(root);
+            q.add(null);
+
+            while(!q.isEmpty()){
+
+                Node currnode=q.remove();   // pop out the first
+
+                if(currnode==null){         //if it is null then nextline
+                    System.out.println();
+                    if(q.isEmpty()){        // is q empty means all are done then break
+                        break ;
+                    }else{
+                        q.add(null);  // else add null in queue becz null helps to put in next line
+                    }
+
+                }else{
+                    System.out.println(currnode.data+" "); // if currnode !=null then print it
+
+                    if(currnode.left!=null){        // check if left subtree not null then add in queue 
+                        q.add(currnode.left);
+                    }
+                    if(currnode.right!=null){
+                        q.add(currnode.right);
+                    }
+                }
+               
+            }
+            
+        }
     }
 
     public static void main(String[]args){
@@ -69,6 +105,7 @@ public class PreOrder{
         
         tree.postorder(root);  // postorder
 
+        tree.levelorder(root);
     }
     
 }
