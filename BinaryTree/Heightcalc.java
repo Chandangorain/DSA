@@ -38,6 +38,20 @@ public class Heightcalc {
         return result ;
 
     }
+
+    // sum of nodes 
+
+    public static int sum(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftsum=sum(root.left); // sum of all left subtree
+        int rightsum=sum(root.right); // sum of all right subtree
+        int treesum=leftsum+rightsum+root.data;  //left+right subtree + root value
+
+        return treesum;
+
+    }
     public static void main(String[]args){
         /*
         
@@ -60,5 +74,6 @@ public class Heightcalc {
         System.out.println(height(root));
 
         System.out.println(count(root));
+        System.out.println(sum(root));
     }
 }
