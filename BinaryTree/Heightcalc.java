@@ -1,5 +1,5 @@
-// height calculation
 
+import java.util.*;
 
 public class Heightcalc {
     static class Node{
@@ -12,6 +12,7 @@ public class Heightcalc {
             this.right=null;
         }
     }
+    // height calculation
 
     public static int height(Node root){
         if(root==null){
@@ -24,6 +25,19 @@ public class Heightcalc {
         return result;
     }
 
+
+    // count of nodes 
+    public static int count(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftcount=count(root.left);
+        int rightcount=count(root.right);
+        int result=(leftcount+rightcount)+1;
+
+        return result ;
+
+    }
     public static void main(String[]args){
         /*
         
@@ -44,5 +58,7 @@ public class Heightcalc {
         root.right.right=new Node(7);
 
         System.out.println(height(root));
+
+        System.out.println(count(root));
     }
 }
