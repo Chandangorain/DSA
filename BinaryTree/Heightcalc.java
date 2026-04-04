@@ -52,6 +52,26 @@ public class Heightcalc {
         return treesum;
 
     }
+
+    //diamater
+    public static int diameter(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftDiam=diameter(root.left);   // calc left diam of left tree =3(2,4,5)
+        int leftheight=height(root.left);  //leftheight=2
+        int rightDiam=diameter(root.right);  // rightdiam=3(3,6,7)
+        int rightheight=height(root.right);   //rightheight=2
+
+        int selfdiam=leftheight+rightheight+1;  // 5(2+2+1)
+        
+        int result=Math.max(selfdiam,Math.max(leftDiam,rightDiam)); // max(5,max(3,3)) =5
+        return result;
+
+
+    }
+
+
     public static void main(String[]args){
         /*
         
@@ -72,8 +92,8 @@ public class Heightcalc {
         root.right.right=new Node(7);
 
         System.out.println(height(root));
-
         System.out.println(count(root));
         System.out.println(sum(root));
+        System.out.println(diameter(root));
     }
 }
