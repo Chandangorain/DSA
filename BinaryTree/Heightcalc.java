@@ -53,8 +53,8 @@ public class Heightcalc {
 
     }
 
-    //diamater
-    public static int diameter(Node root){
+    //diamater   Approach:1  
+    public static int diameter(Node root){   // 0(N^2)
         if(root==null){
             return 0;
         }
@@ -69,6 +69,28 @@ public class Heightcalc {
         return result;
 
 
+    }
+
+    //approach2 :optimal  0(n)
+    static class Info{
+        int diam;
+        int ht;
+
+        public Info(int diam, int ht){
+        this.diam=diam;
+        this.ht=ht;
+        }
+    }
+    public static Info diameter(Node root){ //calculating diameter and height at the same time
+        if(root==null){
+            return new Info(0,0);
+        }
+        Info leftinfo=diameter(root.left);      //leftdiam ,leftht calc at same time
+        Info righInfo=diameter(root.right);
+
+       int diam=Math.max(Math.max(leftinfo.diam,righInfo.diam), leftinfo.ht+righInfo.ht+1);  // max of left diam, right diam and self diam
+       int ht=Math.max(leftinfo.ht,righInfo.ht)+1;
+       return new Info(diam, ht);
     }
 
 
