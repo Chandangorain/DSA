@@ -1,4 +1,13 @@
+// maximum points you can get from cards
 
+//approach 
+/*  we are going to note the approach in short and single step 
+1. we will take the sum of first k elements and store it in leftsum and also store it in maxsum
+2. then we will remove 1 element from leftsum and add 1 element from rightsum and check if the sum of leftsum and rightsum is greater than maxsum or not if it is greater than maxsum then we will update maxsum with the new sum of leftsum and rightsum
+3. we will repeat step 2 until we have removed all k elements from leftsum and added all k elements to rightsum
+
+
+*/
 
 import java.util.*;
 
