@@ -6,7 +6,7 @@ Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab
 
 import java.util.*;
 class Solution {
-    public static int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {  //brute force code . if character non repeat then set.add else break and calc the length
         int n=s.length();
         int maxlen=0;
         for(int i=0;i<n;i++){
