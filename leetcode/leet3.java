@@ -11,7 +11,7 @@ class Solution {
         int maxlen=0;
         for(int i=0;i<n;i++){
             HashSet<Character>set=new HashSet<>();
-            for(int j=i;j<n;j++){
+            for(int j=i;j<n;j++){       // 0(n^2)
                char ch=s.charAt(j);
                if(set.contains(ch)){
                 break;
@@ -32,3 +32,20 @@ class Solution {
     }
     
 }
+
+/*
+for optimal code we will use sliding window approach
+int left=0;
+int right=0;
+while(right<n){
+    char ch=s.charAt(right);
+    if(!set.contains(ch)){
+        set.add(ch);
+        right++;
+        maxlen=Math.max(maxlen,right-left);
+    }
+    else{
+        set.remove(s.charAt(left));
+        left++;
+    }
+ */
