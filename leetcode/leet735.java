@@ -59,9 +59,9 @@ int[]nums=new int[n];
 for(int i=0;i<n;i++){
 nums[i]=sc.nextInt();
 }
-int[] result=asteroidscollision(nums);
-for(int i = 0; i < result.length; i++){
-        System.out.print(result[i] + " ");
+int[] answer=asteroidscollision(nums);
+for(int i = 0; i < answer.length; i++){
+        System.out.print(answer[i] + " ");
     }
 }
 
