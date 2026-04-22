@@ -22,14 +22,14 @@ public static int[]asteroidscollision(int[]asteroids) {
 	for(int i=0;i<list.size()-1;i++){
 		int first=list.get(i);
 		int second=list.get(i+1);
-		if(first>0 && second<0){
+		if(first>0 && second<0){        // condition for collision . if both are same sign then they will never collide and dont come to this loop and just push 
 			if(Math.abs(first)<Math.abs(second)){
 			    list.remove(i);
 			    changed=true;
 			    break;
 			}
-			else if(Math.abs(first)>Math.abs(second)){
-			   list.remove(i+1);
+			else if(Math.abs(first)>Math.abs(second)){  // 10,-5 10 is greater than 5 so -5 will be removed and 10 will be there in
+			   list.remove(i+1);        // -5 will be removed
 			   changed=true;
 			    break;
 			}
