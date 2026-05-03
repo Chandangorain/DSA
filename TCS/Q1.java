@@ -44,3 +44,22 @@ public class Q1 {
 	}
     
 }
+
+
+/*
+now optimal : XOR opeartion [2,2,1,3,3]
+2 ^ 2 = 0
+1 ^ 1 = 0
+3 stays
+
+int[] nums = {2, 2, 3, 1, 1};
+
+        int result = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            result = result ^ nums[i];
+        }
+
+        System.out.println(result);
+
+*/
