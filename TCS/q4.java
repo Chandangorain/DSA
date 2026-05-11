@@ -29,9 +29,8 @@ public class q4 {
         int start=0;
         int end=k-1;
 
-        while(end<=nums.length){
             int min=nums[start];
-            for(int i=start;i<end;i++){
+            for(int i=start;i<=end;i++){
                 if(nums[i]<min){
                     min=nums[i];        //store min
                 }
@@ -39,7 +38,7 @@ public class q4 {
             result.add(min);
             start++;            // window shift foreward
             end++;              // window shift foreward
-        }
+        
         System.out.println(result);
     }
     
