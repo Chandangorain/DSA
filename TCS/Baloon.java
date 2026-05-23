@@ -36,9 +36,15 @@ public class Baloon {
     public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int[]nums=new int[n];
+        sc.nextLine(); // Consume the newline character after reading n
+        String s=sc.nextLine();
+        s=s.replace("["," ");
+        s = s.replace("]", ""); // Split by comma 
+
+        String[] parts = s.split(","); 
+        int[] nums = new int[parts.length];
 		for(int i=0;i<n;i++){
-		    nums[i]=sc.nextInt();
+		    nums[i]=Integer.parseInt(parts[i].trim());
 		}
 		int c=sc.nextInt();
 		Arrays.sort(nums);
