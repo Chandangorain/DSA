@@ -35,12 +35,12 @@ class minSubarray {
         int target=sc.nextInt();
         sc.nextLine();
         String s=sc.nextLine();
-        s=s.replace("[","");
+        s=s.replace("[","");    //removing the square brackets from the input string
         s=s.replace("]","");
-        String[]parts=s.split(",");
-        int[]arr=new int[parts.length];
+        String[]parts=s.split(",");         //splitting the string into an array of strings based on the comma delimiter
+        int[]arr=new int[parts.length];     //creating an integer array to store the parsed integers from the input string
         for(int i=0;i<arr.length;i++){
-            arr[i]=Integer.parseInt(parts[i].trim());
+            arr[i]=Integer.parseInt(parts[i].trim());   //parsing each string element to an integer and storing it in the integer array
         }
         System.out.println(minsubarraysum(arr,target));
     }

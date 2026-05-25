@@ -1,8 +1,14 @@
+//reverse the words in a given string
+
+// sample input: "Hello World"
+// sample output: "World Hello"
+
+
 import java.util.*;
 
 public class reverse {
     public static String Reversewords(String s){
-        s=s.trim();
+        s=s.trim();                                 // Remove leading and trailing spaces from the input string
         String[]words=s.split("\\\s+");
         String result="";
         for(int i=words.length-1;i>=0;i--){
