@@ -3,16 +3,12 @@ convert a roman numeral to an integer.
 IV=4
 M=1000
 */
-
-
-
-
 import java.util.*;
 class Solution {
     public static int romanToInt(String s) {
         int sum=0;
         for(int i=0;i<s.length();i++){
-            int current=value(s.charAt(i));
+            int current=value(s.charAt(i));     //here value is a function that takes a character as input and returns its corresponding integer value based on the rules of Roman numerals. The function checks the character and returns the appropriate value .
              if(i < s.length() - 1 &&
                current < value(s.charAt(i + 1))){
                 sum-=current;
