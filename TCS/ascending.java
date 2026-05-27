@@ -36,3 +36,4 @@ public class ascending {
 
     System.out.println(maxAscendingSum(nums));  
 }
+}
