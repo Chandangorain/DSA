@@ -1,3 +1,12 @@
+/*
+fizzbuzz nuber , leetcode 412
+input: n=3
+output: ["1","2","Fizz"]
+Explanation: For n = 3, the output is ["1","2","Fizz"] because 1 is not a multiple of 3 or 5, so it is represented as "1".
+2 is also not a multiple of 3 or 5, so it is represented as "2". However, 3 is a multiple of 3, so it is represented as "Fizz".
+
+*/
+
 import java.util.*;
 
 public class Fizzbuzz {
