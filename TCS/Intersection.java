@@ -37,7 +37,7 @@ public class Intersection
         s2 = s2.replace("[", "");
         s2 = s2.replace("]", "");
         String[] parts2 = s2.split(",");
-        int[] nums2 = new int[parts2.length];
+        int[] numHs2 = new int[parts2.length];
 
         for (int i = 0; i < parts2.length; i++) {
             nums2[i] = Integer.parseInt(parts2[i].trim());
