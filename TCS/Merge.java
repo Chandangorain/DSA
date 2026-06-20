@@ -17,10 +17,12 @@ public class Merge
         int[]result=new int[m+n];
         int k=0;
         for(int i=0;i<n;i++){
-            result[k++]=nums1[i];
+            result[k]=nums1[i];
+            k++;
         }
         for(int j=0;j<m;j++){
-            result[k++]=nums2[j];
+            result[k]=nums2[j];
+            k++;
         }
         Arrays.sort(result);
         return result;

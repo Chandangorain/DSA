@@ -3,9 +3,9 @@ The Equilibrium Sentinel .A sequence of power nodes is arranged randomly.You mus
 Every node to its left has a strictly smaller value.
 Every node to its right has a strictly greater value.
 If no such node exists, return -1.
-input: [1,3,5,4,6]
+input: [1,3,5,7,6]
 output: 5
-Explanation: 5 is the first node such that every node to its left (1 and
+Explanation: 5 is the first node such that every node to its left (1 and 3) has a smaller value, and every node to its right (7 and 6) has a greater value.
 */
 
 import java.util.Scanner;
