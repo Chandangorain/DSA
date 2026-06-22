@@ -5,7 +5,7 @@ count sunday
 import java.util.*;
 public class CountSunday {
 
-    public static int sundaycount(String startday,int k){
+    public static int sundaycount(String day,int k){
         Map<String,Integer>map=new HashMap<>();
         map.put("sun",0);
         map.put("mon",1);
@@ -15,7 +15,7 @@ public class CountSunday {
         map.put("fri",5);
         map.put("sat",6);
 
-        int start=map.get(startday);
+        int start=map.get(day);
         int count=0;
         for(int i=0;i<k;i++){
             int currday=(start+i)%7;
@@ -27,9 +27,9 @@ public class CountSunday {
     }
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
-        String startday=sc.nextLine();
+        String day=sc.nextLine();
         int k=sc.nextInt();
-        System.out.println(sundaycount(startday,k));
+        System.out.println(sundaycount(day,k));
     }
     
 }
