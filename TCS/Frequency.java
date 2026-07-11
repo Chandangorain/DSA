@@ -11,16 +11,13 @@ public class Frequency {
     public static int firstUnique(int[] nums) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
-
-        // Count frequency of every element
-        for (int num : nums) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+        for (int i : nums) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
 
-        // Find the first element whose frequency is 1
-        for (int num : nums) {
-            if (map.get(num) == 1) {
-                return num;
+        for (int i : nums) {
+            if (map.get(i) == 1) {
+                return i;
             }
         }
 
