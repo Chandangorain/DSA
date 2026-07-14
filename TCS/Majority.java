@@ -1,4 +1,8 @@
 //leetcode 169
+/*
+input: [3,2,3]
+output: 3
+*/
 
 import java.util.*;
 public class Majority{
