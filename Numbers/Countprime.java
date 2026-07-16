@@ -29,6 +29,18 @@ public class Countprime {
     return count;
     
   }
+
+  /*  
+  if it said to return the number in array . then initialize a list and add(i) in list 
+  ArrayList<Integer> list = new ArrayList<>();
+...
+....
+..
+if(isprime){
+list.add(i);
+}
+return list;
+  */
     public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       int n=sc.nextInt();
