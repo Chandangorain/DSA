@@ -41,6 +41,7 @@ public class Rotatebyk {
 
  
     System.out.print(Arrays.toString(rotate(arr,k)));
+    sc.close();
 
     }
 }
