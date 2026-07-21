@@ -13,8 +13,9 @@ public class Reverse {
     public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       String s=sc.nextLine();
-      s=s.replace("\"","");
-        System.out.println(remove("\""+s+"\""));
+      s=s.replace("\"","");     // remove double quotes from the string
+        System.out.println(remove("\""+s+"\""));     // add double quotes to the string
+        sc.close();
       
     }
 }
