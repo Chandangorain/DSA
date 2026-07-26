@@ -1,3 +1,6 @@
+/* strong number is a number whose sum of factorial of each digit is equal to the number itself */
+
+
 package Numbers;
     import java.util.*;
 public class StrongNumber {

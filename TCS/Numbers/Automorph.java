@@ -1,3 +1,5 @@
+// number is automorph if 
+
 package Numbers;
 import java.util.*;
 public class Automorph {

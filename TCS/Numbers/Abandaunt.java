@@ -1,3 +1,10 @@
+/*
+input: 12
+find the sum of all factors of 12 except 12 itself
+n
+*/
+
+
 package Numbers;
  import java.util.*;
 
@@ -10,7 +17,7 @@ public class Abandaunt {
       
     int sum=0;
     for(int i=1;i<n;i++){
-      if(n%i==0){
+      if(n%i==0){   //check if i is a factor of n
        sum+=i;
       }
       

@@ -1,3 +1,4 @@
+/* Find the sum of digits of a number */
 package Numbers;
 import java.util.*;
 public class Digitsum {
