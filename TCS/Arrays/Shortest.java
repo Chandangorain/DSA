@@ -13,18 +13,22 @@ class Shortest {
         for(int i=0;i<n;i++){
             int ls=Integer.MAX_VALUE;
             int rs=Integer.MAX_VALUE;
+
+            // searching left side
             for(int j=i;j>=0;j--){
                 if(s.charAt(j)==c){
                     ls=i-j;
                     break;
                 }
             }
+            //searching right side
             for(int j=i;j<n;j++){
                 if(s.charAt(j)==c){
                     rs=j-i;
                     break;
                 }
             }
+            //now take min distance of both
             ans[i]=Math.min(ls,rs);
         }
         return ans;
