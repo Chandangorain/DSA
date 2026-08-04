@@ -1,3 +1,11 @@
+/*
+Spring – March to May,
+Summer – June to August,
+Autumn – September to November and,
+Winter – December to February.
+*/
+
+package Arrays;
 import java.util.*;
 
 public class Season {
