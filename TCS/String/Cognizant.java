@@ -15,7 +15,6 @@ public static int countPairs(String s) {
     int count = 0;
 
     for (int i = 0; i < s.length() - 1; i++) {
-        // Place variables INSIDE the loop so they update with 'i'
         char present = s.charAt(i);
         char next = s.charAt(i + 1);
 
@@ -28,7 +27,7 @@ public static int countPairs(String s) {
     return count;
 }
     public static void main(String[] args) {
-        String s = "abac";
+        String s = "hello";
         int result = countPairs(s);
         System.out.println(result);
     }
