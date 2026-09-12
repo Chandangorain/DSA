@@ -14,7 +14,7 @@ public class Equilibirum {
     for (int i = 0; i < S.length(); i++) {
 
         char ch = S.charAt(i);
-        int val = ch - 'a' + 1;
+        int val = ch - 'a' + 1; // this is for
 
         int leftsum = 0;
         int rightsum = 0;

@@ -1,5 +1,6 @@
 /*
 find first unique character in a string
+input :
 */
 
 import java.util.Scanner;

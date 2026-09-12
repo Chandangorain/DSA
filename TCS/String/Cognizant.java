@@ -9,9 +9,9 @@ package String;
 public class Cognizant {
     private static boolean isvowel(char ch) {
     return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
-}
+    }
 
-public static int countPairs(String s) {
+    public static int countPairs(String s) {
     int count = 0;
 
     for (int i = 0; i < s.length() - 1; i++) {
