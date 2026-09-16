@@ -3,8 +3,6 @@ check every frequency of the number in the array and return the first unique num
 input: [9, 2, 3, 2, 6, 6, 9, 7, 3]
 output: 7
 */
-
-
 package TCS;
 import java.util.*;
 public class Frequency {

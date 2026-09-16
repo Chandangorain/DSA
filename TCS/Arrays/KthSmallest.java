@@ -1,3 +1,11 @@
+/*Given an integer array arr and an integer k, find the K-th smallest distinct element in the array. If there are fewer than k distinct elements, return -1.
+
+input :arr = [4, 2, 2, 1, 3]
+k = 3
+output =3 (no duplicte will be counted)
+ */
+
+
 package Arrays;
     import java.util.*;
 

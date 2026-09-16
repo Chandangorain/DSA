@@ -25,12 +25,11 @@ public class Cognizant {
         int count=0;
         for(int i=0;i<n;i++){
              Arrays.sort(arr);
-             if((total+arr[i])<=n){
-                total+=arr[i];
+            if((total+arr[i])<=n){
                 count++;
-             }else{
+            }else{
                 break;
-             }
+            }
         }
         return count;
     }

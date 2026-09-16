@@ -1,7 +1,7 @@
 /*  a number is lucky if 
-at least one digit is repeated
-sum of digits is even
-should not contain 0
+1.at least one digit is repeated
+2.sum of digits is even
+3.should not contain 0
 */
 
 

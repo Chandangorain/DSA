@@ -15,6 +15,7 @@ Amit 90
 Riya 80
 Sam 90
 Raj 80
+
 Output
 Amit 90
 Sam 90

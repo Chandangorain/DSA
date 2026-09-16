@@ -4,9 +4,6 @@ input :[8,2,7,4,9]
 output :3
 Explanation: The elements greater than all prior elements are 8, 9, and 7.
 */
-
-
-
  import java.util.*;
 public class pyq3 {
    
