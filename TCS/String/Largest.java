@@ -2,6 +2,19 @@
 return the possible largest number
 Input: nums = [3,30,34,5,9]
 Output: "9534330"
+3 and 30
+330 > 303
+→ 3 comes first
+
+5 and 34
+534 > 345
+→ 5 comes first
+
+Final order:
+9, 5, 34, 3, 30
+
+Answer:
+9534330
 */
 package String;
 import java.util.*;
@@ -24,7 +37,7 @@ public class Largest {
         }
         StringBuilder result=new StringBuilder();
         for(int i=0;i<arr.length;i++){
-            result.append(arr[i]);
+            result.append(arr[i]);  // join all string
         }
         return result.toString();
 
