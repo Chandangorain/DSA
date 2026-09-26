@@ -14,8 +14,11 @@ The maximum number is 9969.
 
 
 */
+
+import java.util.Scanner;
+
 class Solution {
-    public int maximum69Number (int num) {
+    public static int maximum69Number (int num) {
         char[] digits = String.valueOf(num).toCharArray();
         for(int i=0;i<digits.length;i++){
             if(digits[i]=='6'){   // when get  first 6 change to 9 , only this is the max 
@@ -26,5 +29,15 @@ class Solution {
         return Integer.parseInt(new String(digits));
 
         
+    }
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[]num=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        
+       
     }
 }
