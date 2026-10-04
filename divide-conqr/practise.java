@@ -19,9 +19,9 @@ int puffss = Math.abs (puffs) * 20;
 int coolDrinkss = Math.abs (coolDrinks) * 10;
 
 System.out.println ("Bill Details");
-System.out.println ("No of pizzas:" + pizza);
-System.out.println ("No of puffs:" + puffs);
-System.out.println ("No of cooldrinks:" + coolDrinks);
+System.out.println ("price of pizzas:" + pizza);
+System.out.println ("price of puffs:" + puffs);
+System.out.println ("price of cooldrinks:" + coolDrinks);
 
 totalprice = pizzaa + puffss + coolDrinkss;
 System.out.println ("Total price=" + totalprice);
