@@ -39,7 +39,7 @@ public class CountParanthesis {
                 }else{
                     curr=2*curr;
                 }
-                int previous = stack.pop();
+                int previous = stack.pop();      // Get the score of the previous/outer level
                 stack.push(previous + curr);
             }
         }
