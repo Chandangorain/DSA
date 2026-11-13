@@ -8,6 +8,8 @@ Explanation:
 2. Remove 1 and 4. The average is (1 + 4) / 2 = 2.5, and nums = [4,3].
 3. Remove 3 and 4, and the average is (3 + 4) / 2 = 3.5.
 Since there are 2 distinct numbers among 2.5, 2.5, and 3.5, we return 2.
+
+***hint : to remove lowest , highest use sorting  and for distinct save the avg in a hashset
 */
 
 package Twopointer;
